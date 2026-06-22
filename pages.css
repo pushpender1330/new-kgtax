@@ -1,0 +1,251 @@
+/* Page hero */
+.page-hero {
+    background: linear-gradient(135deg,
+            #0b1b3b 0%,
+            #0f2452 60%,
+            #16306b 100%);
+    color: #fff;
+    padding: 3rem 0;
+}
+
+.page-hero h1 {
+    font-weight: 800;
+    font-size: 2.2rem;
+    line-height: 1.2;
+}
+
+.page-hero ul.benefits {
+    list-style: none;
+    padding: 0;
+    margin: 1.25rem 0 0;
+}
+
+.page-hero ul.benefits li {
+    padding: 0.35rem 0;
+    font-size: 0.95rem;
+}
+
+.page-hero ul.benefits li i {
+    color: var(--yellow);
+    margin-right: 0.55rem;
+}
+
+.rating-box {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    padding: 0.6rem 0.9rem;
+    margin-top: 1rem;
+}
+
+.rating-box .stars {
+    color: #f5a623;
+}
+
+.rating-box small {
+    display: block;
+    color: #cbd5e1;
+}
+
+.rating-box b {
+    font-size: 1.05rem;
+    color: #fff;
+}
+
+/* Hero form card */
+.lead-card {
+    background: #fff;
+    color: var(--text);
+    border-radius: 14px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
+    padding: 1.75rem;
+}
+
+.lead-card h3 {
+    font-weight: 700;
+    color: var(--navy);
+    font-size: 1.15rem;
+    margin-bottom: 1rem;
+}
+
+.lead-card .form-control,
+.lead-card .form-select {
+    border-radius: 8px;
+    padding: 0.7rem 0.9rem;
+    border: 1px solid #e5e7eb;
+    font-size: 0.92rem;
+}
+
+.lead-card .form-control:focus,
+.lead-card .form-select:focus {
+    border-color: var(--green);
+    box-shadow: 0 0 0 0.15rem rgba(26, 161, 74, 0.15);
+}
+
+.lead-card .btn-submit {
+    background: var(--green);
+    color: #fff;
+    font-weight: 600;
+    border: 0;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.lead-card .btn-submit:hover {
+    background: var(--green-dark);
+}
+
+/* Content layout */
+.content-section {
+    padding: 3rem 0;
+    background: #fff;
+}
+
+.index-card {
+    background: var(--bg-soft);
+    border-radius: 12px;
+    padding: 1.5rem;
+    position: sticky;
+    top: 20px;
+}
+
+.index-card h4 {
+    font-weight: 700;
+    color: var(--navy);
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--green);
+    padding-bottom: 0.5rem;
+}
+
+.index-card ol {
+    padding-left: 1.1rem;
+    margin: 0;
+}
+
+.index-card ol li {
+    padding: 0.4rem 0;
+    font-size: 0.9rem;
+}
+
+.index-card ol li a {
+    color: var(--text);
+}
+
+.index-card ol li a:hover {
+    color: var(--green);
+}
+
+.content-block {
+    margin-bottom: 2.5rem;
+}
+
+.content-block h2 {
+    font-weight: 700;
+    color: var(--navy);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.content-block h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 3px;
+    background: var(--green);
+    border-radius: 2px;
+}
+
+.content-block p {
+    color: #374151;
+    line-height: 1.75;
+    font-size: 0.95rem;
+}
+
+.content-block ul.benefits-list {
+    list-style: none;
+    padding: 0;
+}
+
+.content-block ul.benefits-list li {
+    padding: 0.6rem 0;
+    padding-left: 1.8rem;
+    position: relative;
+    font-size: 0.95rem;
+    color: #374151;
+}
+
+.content-block ul.benefits-list li::before {
+    content: "\f058";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: var(--green);
+    position: absolute;
+    left: 0;
+    top: 0.55rem;
+}
+
+.content-block ul.benefits-list li b {
+    color: var(--navy);
+}
+
+.content-block ol.steps {
+    counter-reset: step;
+    list-style: none;
+    padding: 0;
+}
+
+.content-block ol.steps li {
+    counter-increment: step;
+    padding: 1rem 1.25rem 1rem 3.5rem;
+    background: var(--bg-soft);
+    border-radius: 10px;
+    margin-bottom: 0.75rem;
+    position: relative;
+    font-size: 0.95rem;
+}
+
+.content-block ol.steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--green);
+    color: #fff;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+}
+
+.content-img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    margin-top: 1rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 991px) {
+    .page-hero h1 {
+        font-size: 1.7rem;
+    }
+
+    .index-card {
+        position: static;
+        margin-bottom: 1.5rem;
+    }
+}
