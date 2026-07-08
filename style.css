@@ -56,6 +56,7 @@
   --text: #1f2937;
   --muted: #6b7280;
   --bg-soft: #f6f8fb;
+  --light-blue: #17568a;
 }
 
 * {
@@ -76,7 +77,7 @@ a {
 
 /* Top bar */
 .topbar {
-  background: var(--navy);
+  background: var(--light-blue);
   color: #fff;
   font-size: 0.85rem;
   padding: 0.25rem 0;
@@ -103,7 +104,7 @@ a {
 }
 
 .topbar .info-item i {
-  color: #cfd8ff;
+  color: #28d866;
 }
 
 /* Navbar */
@@ -163,6 +164,15 @@ a {
   font-size: .9rem;
 }
 
+.underline {
+    display: inline-block;
+    width: 100%;
+    max-width: 50px;
+    height: 4px;
+    background-color: var(--green);
+    border-radius: 4px;
+}
+
 /* Hero */
 .hero {
   padding: 3rem 0 2rem;
@@ -202,8 +212,8 @@ a {
 
 .btn-whatsapp {
   background: #fff;
-  color: var(--text);
-  border: 1px solid #e5e7eb;
+  color: var(--navy);
+  border: 1px solid var(--navy);
   padding: 0.7rem 1.2rem;
   font-weight: 600;
   border-radius: 6px;
@@ -334,7 +344,7 @@ a {
   width: 100%;
   gap: 48px;
   align-items: center;
-  animation: animateLogo 8s linear 0s infinite forwards;
+  animation: animateLogo 16s linear 0s infinite forwards;
 }
 
 .clients .logos div img {
@@ -359,7 +369,7 @@ a {
 
 /* Stats band */
 .stats {
-  background: var(--navy);
+  background: var(--light-blue);
   color: #fff;
   padding: 1.25rem 0;
 }
@@ -443,7 +453,7 @@ section {
 
 .service-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 14px 30px rgba(11, 27, 59, 0.08);
+  box-shadow: 0 10px 10px 2px rgba(11, 27, 59, 0.25);
 }
 
 .service-card .top {
@@ -999,7 +1009,12 @@ footer a:hover {
 
   line-height: 1.8;
 
-  font-size: 15px;
+  font-size: .8rem;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;   /* Limits the text to exactly 3 lines */
+  overflow: hidden;        /* Hides the text beyond the 3rd line */
 
 }
 
@@ -1015,7 +1030,7 @@ footer a:hover {
 
 }
 
-.avatar {
+.avatar ,.avatar img{
 
   width: 36px;
 
