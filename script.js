@@ -1,12 +1,13 @@
-// Smooth nav active toggle
-document.querySelectorAll(".navbar-nav .nav-link").forEach((l) => {
-  l.addEventListener("click", () => {
-    document
-      .querySelectorAll(".navbar-nav .nav-link")
-      .forEach((x) => x.classList.remove("active"));
-    l.classList.add("active");
-  });
-});
+
+// const dropdownbtn = document.querySelectorAll('.dropdown .dropdown-btn');
+
+// dropdownbtn.forEach(btn => {
+//     btn.addEventListener('click',(e)=>{
+//         e.currentTarget.parentElement.classList.toggle('show');
+//         console.log(e.currentTarget.parentElement);
+//     })
+    
+// })
 
 emailjs.init('BMMhy6i5V_E7uXaKc');
 

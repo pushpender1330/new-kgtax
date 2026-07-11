@@ -1,9 +1,24 @@
+:root {
+  --navy: #0b1b3b;
+  --navy-2: #0f2452;
+  /* --green: #1aa14a; */
+  --green: #32d314;
+  --green-dark: #138a3e;
+  --yellow: #f5a623;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --bg-soft: #f6f8fb;
+  --light-blue: #17568a;
+}
+
 /* Page hero */
 .page-hero {
     background: linear-gradient(135deg,
             #0b1b3b 0%,
             #0f2452 60%,
             #16306b 100%);
+
+    background: var(--light-blue);
     color: #fff;
     padding: 3rem 0;
 }
