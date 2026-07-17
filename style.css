@@ -792,7 +792,7 @@ footer {
   /* background: #0a1730; */
   background-color: var(--light-blue);
   color: #cbd5e1;
-  padding: 3rem 0 1rem;
+  padding: 3rem 0 .5rem;
 }
 
 footer .footer-left{
@@ -880,15 +880,19 @@ footer a:hover {
 .copy-right-text {
   border-top: 1px solid var(--green);
   margin-top: 2rem;
-  padding-top: 1rem;
+  padding-top: .5rem;
+  font-size: 0.8rem;
+  color: white;
+}
+.copy-right-text a{
   font-size: 0.8rem;
 }
 
 /* Floating wa */
 .wa-float {
   position: fixed;
-  right: 1.5rem;
-  bottom: 1.5rem;
+  right: 2.5rem;
+  bottom: 3rem;
   background: var(--green);
   color: #fff;
   /* writing-mode: vertical-rl; */

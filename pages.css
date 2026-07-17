@@ -391,6 +391,12 @@
     color:var(--text);
 }
 
+/* privacy page */
+.banner-text{
+    background-color: var(--light-blue);
+    color: white;
+}
+
 @media(max-width:768px){
 
     .section-title h2{
