@@ -220,6 +220,9 @@ a {
   font-weight: 600;
   border-radius: 6px;
 }
+.btn-whatsapp:hover{
+  border: 1px solid var(--navy);
+}
 
 .btn-whatsapp i {
   color: #25d366;
